@@ -19,6 +19,17 @@ storiesOf('React-gesture', module)
       onSwipeDown={action('shipe down')}
       onSwipeLeft={action('swipe left')}
       onSwipeRight={action('swipe right')}
+      onTap={action('tap')}
+      onClick={action('click')}
+      onHold={action('hold')}
+      onPinchToZoom={action('pinch-to-zoom')}
+      onTouchStart={action('touch start')}
+      onTouchMove={action('touch move')}
+      onTouchCancel={action('touch cancel')}
+      onTouchEnd={action('touch end')}
+      onMouseDown={action('mouse down')}
+      onMouseMove={action('mouse move')}
+      onMouseUp={action('mouse up')}
     >
       <div style={blockStyle} />
     </ReactGesture>
