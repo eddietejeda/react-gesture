@@ -12,12 +12,12 @@
     "url": "https://github.com/rtkhanas"
   },
   "scripts": {
-    "demo:build": "cd docs && webpack",
-    "demo": "cd docs && webpack-dev-server --inline --hot",
+    "storybook-web-build": "cd ./storybooks/web && npm run build-storybook",
+    "storybook-web": "cd ./storybooks/web && npm run storybook",
     "clean": "rimraf lib",
     "lint": "eslint src",
     "build": "npm run lint && npm run clean && NODE_ENV=release babel src --out-dir lib",
-    "release": "npm run build && npm run demo:build"
+    "release": "npm run build && npm run storybook-web-build"
   },
   "license": "MIT",
   "files": [
