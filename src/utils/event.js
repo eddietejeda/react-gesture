@@ -9,7 +9,7 @@ export function initGestureData(
   velocityX,
   velocityY,
   duration,
-  done
+  done,
 ) {
   e.gesture = {
     deltaX,
